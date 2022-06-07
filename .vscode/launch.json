@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:5000/",
+            "webRoot": "${workspaceFolder}",
+
+            "runtimeExecutable": "/usr/bin/vivaldi-snapshot"
+          },
+          {
+            "type": "chrome",
+            "request": "attach",
+            "urlFilter": "http://localhost:5000/*",
+            "webRoot": "${workspaceFolder}",
+
+          }
+        
+    ]
+}
