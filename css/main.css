@@ -262,8 +262,27 @@ textarea {
   }
 }
 
+/*
+ dP"Yb  Yb    dP 888888 88""Yb Yb        dP 88""Yb 88 888888 888888 .dP"Y8 
+dP   Yb  Yb  dP  88__   88__dP  Yb  db  dP  88__dP 88   88   88__   `Ybo." 
+Yb   dP   YbdP   88""   88"Yb    YbdPYbdP   88"Yb  88   88   88""   o.`Y8b 
+ YbodP     YP    888888 88  Yb    YP  YP    88  Yb 88   88   888888 8bodP' 
+*/
 
+.btn-primary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #6E9EFF;
+  border-radius: 4px;
+  color: white;
 
+}
+
+.btn-primary:any-link {
+  color: #FFFFFF;
+}
 
 
 /*
@@ -276,6 +295,7 @@ body {
   min-height: 75rem;
   padding-top: 4.5rem;
   max-width: 100%;
+  font-family: "Poppins";
 }
 
 
@@ -287,9 +307,18 @@ body {
 */
 
 .L_menu {
-  height: 5em;
+  height: 6em;
   background-color: whitesmoke;
 
+}
+
+ul.nav {
+  float: right;
+}
+
+.L_navbar {
+  align-items: right;
+  justify-content: right;
 }
 
 /*
@@ -300,13 +329,55 @@ o.  88 Y8   8P 88YbdP88 88""Yb Yb   dP   88   88"Yb  Yb   dP 88 Y88
 */
 
 
-.L_left_side_jumbotron {
+
+.L_Jumbotron {
   background-color: #242529;
+  height: 50em;
+}
+
+
+.L_left_side_jumbotron {
+
+  height: 35em;
+
+
 
 }
 
+
+h1.L_Jumbotron_lefttext {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 64px;
+
+
+  color: #FFFFFF;
+
+}
+
+.R_left_side_jumbotron {
+  background-color: #242529;
+
+
+
+}
+
+p.L_Jumbotron_lefttext {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+
+}
+
+
+
+
 #L_img_Jumbotron {
   background-image: url("https://dummyimage.com/500x500.jpg");
+
 }
 
 
@@ -321,16 +392,21 @@ YbodP          8bodP' 888888  YboodP   88   88  YbodP  88  Y8
   max-height: 1em;
 }
 
+
 .L_3section {
-  height: 40%;
-  background-color: #E5E5E5;
+  margin-top: 5em;
+  padding-bottom: 5em;
+}
+
+.L_3section img {
+  height: 5em;
 }
 
 #L_header::before {
   display: block;
   content: "overline";
   color: #3F69BF;
-  font-size:large;
+  font-size: large;
 
 }
 
@@ -348,50 +424,23 @@ YbodP          8bodP' 888888  YboodP   88   88  YbodP  88  Y8
   flex-grow: 0;
 }
 
-h1#L_featured-3{
+.L_featured-3 h2 {
   font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 28px;
-/* identical to box height, or 156% */
-
-
-/* Grey/900 */
-
-color: #242529;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
 
 
 }
 
-p#L_featured-3{
-  font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 28px;
-/* or 175% */
-
-
-/* Grey/800 */
-
-color: #696C74;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
+.L_featured-3 p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #696C74;
+  line-height: 28px;
 }
 
 
@@ -403,55 +452,198 @@ dP""""Yb 88oodP  YbodP  `YbodP'   88
 */
 
 
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+.L_about_img {
+  height: 30em;
+  width: 30em;
+
 }
 
-/* Thin out the marketing headings */
-.featurette-heading {
-font-style: normal;
-font-weight: 600;
-font-size: 32px;
-line-height: 48px;
-color: #242529;
-flex: none;
-order: 1;
-flex-grow: 0;
+.L_featurette-heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #242529;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
-.featurette-heading::before {
+.L_featurette-heading::before {
   display: block;
   content: "overline";
   color: #3F69BF;
-  font-size:large;
+  font-size: large;
 
 }
 
-.featurette-p{
-font-style: normal;
-font-weight: 400;
-font-size: smaller;
-line-height: 28px;
-color: #242529;
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
+.L_featurette-p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: smaller;
+  line-height: 28px;
+  color: #242529;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
 }
 
-.L_button{
+.L_button {
 
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-margin-top: 2em;
-padding: 1em 2px;
-width: 12em;
-height: 3em;
-background: #6E9EFF;
-border-radius: 4px;
-flex: none;
-order: 1;
-flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  padding: 1em 2px;
+  width: 12em;
+  height: 3em;
+  background: #6E9EFF;
+  border-radius: 4px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/*
+888888 888888 .dP"Y8 888888 88 8b    d8  dP"Yb  88b 88 88    db    88     .dP"Y8 
+  88   88__   `Ybo."   88   88 88b  d88 dP   Yb 88Yb88 88   dPYb   88     `Ybo." 
+  88   88""   o.`Y8b   88   88 88YbdP88 Yb   dP 88 Y88 88  dP__Yb  88  .o o.`Y8b 
+  88   888888 8bodP'   88   88 88 YY 88  YbodP  88  Y8 88 dP""""Yb 88ood8 8bodP' 
+*/
+
+.L_section-h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.L_section-p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  text-align: center;
+
+  /* Grey/900 */
+
+  color: #242529;
+}
+
+.L_section-h1::before {
+  display: block;
+  content: "Referencje";
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #6E9EFF;
+}
+
+/*
+ dP""b8 888888    db    
+dP   `"   88     dPYb   
+Yb        88    dP__Yb  
+ YboodP   88   dP""""Yb 
+*/
+
+
+.L_CTA p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  text-align: center;
+
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+
+}
+
+.L_CTA {
+  padding-top: 7em;
+  padding-bottom: 7em;
+  ;
+
+}
+
+.L_CTA h1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.L_CTA h1::before {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  display: block;
+  content: "Overline";
+
+}
+
+.L_CTA {
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+}
+
+/*
+88""Yb 88      dP"Yb   dP""b8 
+88__dP 88     dP   Yb dP   `" 
+88""Yb 88  .o Yb   dP Yb  "88 
+88oodP 88ood8  YbodP   YboodP 
+*/
+
+
+.L_blog h3::before {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #3F69BF;
+  display: block;
+  content: "Kategoria";
 }

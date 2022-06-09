@@ -24,7 +24,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
   <link href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
@@ -33,386 +35,367 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
     integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
   </script>
+  
 </head>
 
-<body class="mx-auto">
+<body>
 
 
   <!--Navbar-->
-  <nav class="navbar navbar-expand-md fixed-top L_menu">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Fixed navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+
+  
+  <nav class="navbar navbar-expand-md fixed-top L_menu bg-light shadow">
+    <div class="container bg-light">
+      <a class="navbar-brand fw-bolder" href="#">SunPage</a>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav me-auto mb-2 mb-md-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+      <div class="collapse navbar-collapse ms-auto" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item me-2">
+            <a class="nav-link active" aria-current="page" href="#">O nas</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item me-2">
+            <a class="nav-link" href="#">Kontakt</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link btn-primary btn" href="#">Porozmawiajmy</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
     </div>
   </nav>
   <!--/Navbar-->
 
   <!--Jumbotron-->
-  <section class="cover-container w-100 overflow-hidden">
-    <div class="row align-items-center min-vh-100 L_left_side_jumbotron">
-      <div class="col-md-6 themed-grid-col align-items-center">
-        <div class="container-fluid py-5 ">
-          <h1 class="display-5 fw-bold text-white">Custom jumbotron</h1>
-          <p class="col-md-8 fs-4 text-white">Using a series of utilities, you can create this jumbotron, just like the
-            one in
-            previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your
-            liking.</p>
-          <button class="btn btn-primary btn-lg" type="button">sss button</button>
+  <section class=" overflow-hidden L_Jumbotron">
+    <div class="row  align-items-center g-0 ">
+      <div class="col-md-6 p-5 L_left_side_jumbotron">
+        <div class="L_Jumbotron_lefttext p-5 mx-5">
+          <h1 class="fw-bold mb-3  text-white">Nagłówek traktujący o działalności firmy</h1>
+          <p class="text-white">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
+          <div class="btn btn-primary">Dowiedz się więcej</div>
         </div>
       </div>
-      <div id="L_img_Jumbotron" class="col-md-6 themed-grid-col min-vh-100"><img id="L_img_Jumbotron"
-          src='https://dummyimage.com/500x500.jpg' alt=''>
+      <div id="L_img_Jumbotron" class="R_left_side_jumbotron col-md-6"><img id="L_img_Jumbotron"
+          src='http://unsplash.it/1000/1000?gravity=center' alt=''>
       </div>
     </div>
   </section>
   <!--Jumbotron-->
 
   <!--3-section-->
-  <section class="L_3section pt-5">
-    <div class="container">
+  <section class="bg-light pt-5">
+    <div class="container L_3section">
       <div id="L_header" class="text-center">
         <h2 class="display-6 fw-bold text-center ">Nagłówek w kilku słowach</h2>
       </div>
-      <!-- Three columns of text below the carousel -->
-
-      <div class="container px-4 py-5" id="L_featured-3">
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-
-
+      <div class="container py-5" >
+        <div class="row row-cols-1 row-cols-lg-3">
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-2">
                 <i class="fi fi-rr-add"></i>
               </div>
-              <div class="col-md-10">
-                <h2>Featured title</h2>
-                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence
-                  and
-                  probably just keep going until we run out of words.</p>
+              <div class="col-md-10 L_featured-3">
+                <h2>Nagłówek w kilku słowach</h2>
+                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
               </div>
             </div>
           </div>
-
-
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-2">
                 <i class="fi fi-rr-add"></i>
               </div>
-              <div class="col-md-10">
-                <h2>Featured title</h2>
-                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence
-                  and
-                  probably just keep going until we run out of words.</p>
+              <div class="col-md-10 L_featured-3">
+                <h2>Nagłówek w kilku słowach</h2>
+                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
               </div>
             </div>
           </div>
-
-
           <div class="col-md-4">
             <div class="row">
               <div class="col-md-2">
                 <i class="fi fi-rr-add"></i>
               </div>
-              <div class="col-md-10">
-                <h2>Featured title</h2>
-                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence
-                  and
-                  probably just keep going until we run out of words.</p>
+              <div class="col-md-10 L_featured-3">
+                <h2>Nagłówek w kilku słowach</h2>
+                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.</p>
               </div>
             </div>
           </div>
-
         </div>
-
       </div>
     </div>
   </section>
   <!--3-section-->
 
-  <!--3-section-->
-
-
-
-
+  <!--3-about-->
   <section id="about" class="about m-5">
     <div class="container">
-
-      <div class="row featurette align-items-center">
+      <div class="row featurette align-items-center my-5 py-5">
         <div class="col-md-4">
-          <h2 class="featurette-heading">Usługa oferowana 
+          <h2 class="L_featurette-heading">Usługa oferowana
             przez firmę
           </h2>
-          <p class="featurette-P ">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
-          <a href="#"><div class="L_button">Skontaktuj się z nami</div></a>
+          <p class="L_featurette-P ">But I must explain to you how all this mistaken idea of denouncing pleasure and
+            praising pain was born and I will give you a complete account of the system.</p>
+          <a href="#">
+            <div class="L_button">Skontaktuj się z nami</div>
+          </a>
         </div>
         <div class="col-md-3"></div>
         <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-          </svg>
-
+          <img class="L_about_img rounded-5" src='http://unsplash.it/1000/1000?gravity=center' alt=''>
         </div>
       </div>
-
-
-      <div class="row featurette align-items-center">
+      <div class="row featurette align-items-center my-5 py-5 ">
         <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-          </svg>
-
+          <img class="L_about_img rounded-5" src='http://unsplash.it/1000/1000?gravity=center' alt=''>
         </div>
         <div class="col-md-3"></div>
         <div class="col-md-4">
-          <h2 class="featurette-heading">Usługa oferowana 
+          <h2 class="featurette-heading">Usługa oferowana
             przez firmę
           </h2>
-          <p class="featurette-P ">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
-          <a href="#"><div class="L_button">Skontaktuj się z nami</div></a>
+          <p class="featurette-P ">But I must explain to you how all this mistaken idea of denouncing pleasure and
+            praising pain was born and I will give you a complete account of the system.</p>
+          <a href="#">
+            <div class="L_button">Skontaktuj się z nami</div>
+          </a>
         </div>
-        
-        
       </div>
-
-
-      <div class="row featurette align-items-center">
+      <div class="row featurette align-items-center my-5 py-5 ">
         <div class="col-md-4">
-          <h2 class="featurette-heading">Usługa oferowana 
+          <h2 class="featurette-heading">Usługa oferowana
             przez firmę
           </h2>
-          <p class="featurette-P ">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
-          <a href="#"><div class="L_button">Skontaktuj się z nami</div></a>
+          <p class="featurette-P ">But I must explain to you how all this mistaken idea of denouncing pleasure and
+            praising pain was born and I will give you a complete account of the system.</p>
+          <a href="#">
+            <div class="L_button">Skontaktuj się z nami</div>
+          </a>
         </div>
         <div class="col-md-3"></div>
         <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
-            height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500"
-            preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text>
-          </svg>
-
+          <img class="L_about_img rounded-5" src='http://unsplash.it/1000/1000?gravity=center' alt=''>
         </div>
       </div>
-
-
-
   </section>
-  <!--3-section-->
-
-
+  <!--3-about-->
+  
+  <!--testimonials-->
   <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-    <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="display-4 fw-normal">Punny headline</h1>
-      <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this
-        example based on Apple’s marketing pages.</p>
-      <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+    <div class="col-md-5 pt-5 pb-2 mx-auto">
+      <h2 class="L_section-h1">Poznaj opinie naszych klientów</h2>
+      <i class="fi fi-rr-quote-right"></i>
+      <p class="L_section-p">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system. But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.</p>
     </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    <div class="d-flex flex-column bd-highlight mb-3">
+      <div class="pb-2 bd-highlight"><img style="width: 50px;" src='https://dummyimage.com/50x50.jpg' alt='' /></div>
+      <div class="bd-highlight">Jan Kowalski</div>
+      <div class="bd-highlight"><small>Firma Jana Kowalskiego</small></div>
+    </div>
   </div>
+  <!--testimonials-->
 
-
-  <div class="album py-5 bg-light">
+  <!--blog-->
+  <div class="album py-5 ">
     <div class="container">
       <div class="row py-5">
-        <div class="col"><h1>Blog</h1></div>
+        <div class="col">
+          <h1>Blog</h1>
+        </div>
         <div class="col ">
-          <div class="button float-end">
+          <a class="btn-primary btn float-end">
             Zobacz więcej
-          </div>
+          </a>
+        </div>
       </div>
-      </div>
-
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
+          <div class="card border-0 shadow-s bg-transparent">
+            <div class="card mb-3 shadow-sm L_blog">
+              <img src='http://unsplash.it/500/400?gravity=center' alt='' />
+            </div>
+            <div class="card-body bg-transparent L_blog">
+              <h3 class="card-text">
+                Intrygujący tytuł artykułu do przeczytania przez użytkownika
+              </h3>
+              <p class="card-text">But I must explain to you how all this mistaken idea of denouncing pleasure and
+                praising pain.</p>
+              <div class="d-flex ">
+                <i class="fi-rr-calendar"></i>
+                <small class="text-muted">&nbsp 13.12.2021</small>
               </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
 
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
+        <div class="col">
+          <div class="card border-0 shadow-s bg-transparent">
+            <div class="card mb-3 shadow-sm L_blog">
+              <img src='http://unsplash.it/500/400?gravity=center' alt='' />
+            </div>
+            <div class="card-body bg-transparent L_blog">
+              <h3 class="card-text">
+                Intrygujący tytuł artykułu do przeczytania przez użytkownika
+              </h3>
+              <p class="card-text">But I must explain to you how all this mistaken idea of denouncing pleasure and
+                praising pain.</p>
+              <div class="d-flex ">
+                <i class="fi-rr-calendar"></i>
+                <small class="text-muted">&nbsp 13.12.2021</small>
               </div>
             </div>
           </div>
         </div>
+        
         <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
-              role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                dy=".3em">Thumbnail</text>
-            </svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
+          <div class="card border-0 shadow-s bg-transparent">
+            <div class="card mb-3 shadow-sm L_blog">
+              <img src='http://unsplash.it/500/400?gravity=center' alt='' />
+            </div>
+            <div class="card-body bg-transparent L_blog">
+              <h3 class="card-text">
+                Intrygujący tytuł artykułu do przeczytania przez użytkownika
+              </h3>
+              <p class="card-text">But I must explain to you how all this mistaken idea of denouncing pleasure and
+                praising pain.</p>
+              <div class="d-flex ">
+                <i class="fi-rr-calendar"></i>
+                <small class="text-muted">&nbsp 13.12.2021</small>
               </div>
             </div>
           </div>
+        </div>
+
+
         </div>
       </div>
     </div>
   </div>
 
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-    <div class="col-md-5 p-lg-5 mx-auto my-5">
-      <h1 class="display-4 fw-normal">Punny headline</h1>
-      <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this
-        example based on Apple’s marketing pages.</p>
-      <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light ">
+    <div class="L_CTA bg-dark h-100 w-75  mx-auto  rounded-3">
+      <div class="col-md-5 mx-auto">
+        <h1 class="text-white">Przekonujący nagłówek w CTA</h1>
+        <p class="text-white">But I must explain to you how all this mistaken idea of denouncing pleasure
+          and praising pain was born.</p>
+        <a class="btn btn-primary" href="#">Napisz do nas</a>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
     </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
   </div>
-
   <section id="contact" class="contact section-bg">
     <div class="container">
 
-      <div class="section-title">
-        <h2>Contact</h2>
-        <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fuga</p>
-      </div>
+
 
       <div class="row mt-5 justify-content-center">
+        <div class="col-lg-6 bg-light p-5 rounded-3">
+          <div class="row mt-5 justify-content-center">
+            <div class="col-lg-10 ">
+              <h1 class="mb-5">Napisz do nas</h1>
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Imię" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="text" class="form-control" name="surname" id="email" placeholder="Nazwisko" required>
+                  </div>
+                </div>
+                <div class="row mt-3">
+                  <div class="col-md-6 form-group">
+                    <input type="email" name="email" class="form-control" id="name" placeholder="e-mail" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="text" class="form-control" name="phone" id="email" placeholder="Telefon" required>
+                  </div>
+                </div>
 
-        <div class="col-lg-10">
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Twoja wiadomość"
+                    required></textarea>
+                </div>
 
-          <div class="info-wrap">
-            <div class="row">
-              <div class="col-lg-4 info">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street<br>New York, NY 535022</p>
-              </div>
 
-              <div class="col-lg-4 info mt-4 mt-lg-0">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com<br>contact@example.com</p>
-              </div>
+                <div class="my-3">
 
-              <div class="col-lg-4 info mt-4 mt-lg-0">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 51<br>+1 5589 22475 14</p>
-              </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Zapoznałem się z regulaminem i wyrażam zgodę na przetwarzanie moich danych osobowych przez
+                      Sungroup.pl
+                    </label>
+                  </div>
+
+                </div>
+                <button class="btn btn-primary col-md-4 float-end py-2" submit>Wyślij wiadomość</button>
+              </form>
             </div>
+
           </div>
 
         </div>
-
-      </div>
-
-      <div class="row mt-5 justify-content-center">
-        <div class="col-lg-10">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="row">
-              <div class="col-md-6 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-              </div>
-              <div class="col-md-6 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-              </div>
-            </div>
-            <div class="form-group mt-3">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-            </div>
-            <div class="form-group mt-3">
-              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-            </div>
-            <div class="my-3">
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your message has been sent. Thank you!</div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
+        <div class="col-lg-6 ">
+          <img style="height: 40em;"  class="bg-light rounded-3" src='http://unsplash.it/800/800?gravity=center' alt='' />
         </div>
 
       </div>
+
+
 
     </div>
   </section><!-- End Contact Section -->
 
   <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+
+
+  <footer class="bg-light mt-5">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-center py-3 ">
+        <span class="col-md-6  text-muted">SunPage</span>
+
+
+        <ul class="nav col-md-6 justify-content-end">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">O nas</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Blog</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Kontakt</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <hr>
+    <div class="container">
+      <div class="d-flex flex-wrap  pb-3 ">
+
+        <ul class="nav col-md-6">
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">&copy; Copyrights 2021 Sungroup</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Polityka prywatności</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Regulamin</a></li>
+        </ul>
+
+
+
+        <ul class="nav col-md-6 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-muted" href="#"><i class="fi fi-brands-facebook"></i></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><i class="fi fi-brands-twitter"></i></a></li>
+          <li class="ms-3"><a class="text-muted" href="#"><i class="fi fi-brands-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
   </footer>
 
-
-
-
-
-
+  <!-- Footer -->
 
 
 
